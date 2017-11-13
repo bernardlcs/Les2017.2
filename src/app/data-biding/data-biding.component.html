@@ -1,0 +1,68 @@
+<section property=" property-biding">
+<!--
+  <article>
+
+    <h3> Interpolation/iterplation </h3>
+    <p> apenas um exemplo : {{ url }}</p>
+    <p>exemplo de getvalor: {{ getvalor()}}</p>
+    <p>exemplo estatico de gostar : {{ getCurtirCurso() }}</p>
+  </article>
+
+  <article>
+    <h3> properti imagem </h3>
+    <img src="{{urlImagem}}">
+
+  </article>
+
+  <article>
+    <p>class e style</p>
+    <div>
+      selecione uma classe
+      <select #classe (change)="0">
+        <option value = 'alert-sucess'> sucess </option>
+        <option value = 'alert-info'> info </option>
+        <option value = 'alert-warning'> warning </option>
+        <option value = 'alert-danger'> danger </option>
+      </select>
+      <br>
+
+      <div class="alert {{classe.value}}" role="alert"> texto de acordo </div>
+
+      <div class="alert" role = "alert" [class.alert-sucess]= "classe.value == 'alert-sucess'">
+        Success
+      </div>
+
+      <div class="alert ">
+        <strong>Info!</strong>
+      </div>
+
+      <div class="alert">
+        <strong>Warning!</strong>
+      </div>
+
+      <div class="alert">
+        <strong>Danger!</strong>
+      </div>
+
+      <div class="alert alert-danger" role="alert"
+           [style.display]="class.value == 'alert.danger.' ? 'block' : 'none' " >
+        texto de erro
+
+      </div>
+
+    </div>
+  </article>
+
+-->
+
+  <article>
+    <h3>event biding</h3>
+    <div >
+      <button (click)="botaoClicado()"  type="button" class="btn btn-default">botao</button>
+
+    </div>
+
+
+  </article>
+
+</section>

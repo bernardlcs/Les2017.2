@@ -5,18 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
+import { LoginComponent } from './login/login.component';
+import { AutenticarService } from './login/autenticar.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataBidingComponent
+    DataBidingComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ AutenticarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
