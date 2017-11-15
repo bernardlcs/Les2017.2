@@ -1,11 +1,18 @@
-<nav>
-  <div class="nav-wrapper " >
-    <a routerLink="" class="brand-logo right">SOSPU</a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SOSPU</a>
+    </div>
+    <ul class="nav navbar-nav">
       <li routerLinkActive="active" ><a routerLink="">Home</a></li>
       <li routerLinkActive="active"><a >Cadastrar Itens</a></li>
       <li routerLinkActive="active" ><a >Estoque</a></li>
-      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="/cadastro"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
