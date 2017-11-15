@@ -1,1 +1,16 @@
-<app-login></app-login>
+<nav>
+  <div class="nav-wrapper " >
+    <a routerLink="" class="brand-logo right">SOSPU</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li routerLinkActive="active" ><a routerLink="">Home</a></li>
+      <li routerLinkActive="active"><a >Cadastrar Itens</a></li>
+      <li routerLinkActive="active" ><a >Estoque</a></li>
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" >
+  <router-outlet></router-outlet>
+</div>
+
