@@ -8,7 +8,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  onSubmitCadastro(){
+  onSubmit(formLogin: NgForm) {
+
+    console.log(formLogin);
 
   }
 
