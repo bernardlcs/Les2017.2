@@ -3,8 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AutenticarService {
 
-  loginUsuario: String;
-  senha: String;
+  loginUsuario: String = "bernard";
+  senha: String ="salinha";
+
 
   constructor() { }
 

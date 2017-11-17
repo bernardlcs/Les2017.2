@@ -1,38 +1,38 @@
-<form #formLogin = "ngForm"  (ngSubmit) = "onSubmit(formLogin)">
-<div class="container">
-  <div class="row">
+<h1>Login</h1>
+<div>
+  <form form #formLogin = "ngForm"  (ngSubmit) = "onSubmit(formLogin)">
 
-    <div class="col s6 offset-s3 z-depth-1" id="panell">
-      <h3 id="title">Login</h3>
-
-        <div class="input-field" id="username">
-          <p>Username</p>
-          <input  type="text" class="validate" name="username" ngModel>
-          <label for="username"></label>
-        </div>
-
-        <div class="input-field" id="password">
-          <p>Password</p>
-          <input  type="password" class="validate" name="password" ngModel>
-          <label for="password"></label>
-        </div>
-
-        <p>
-          <input type="checkbox" id="remember"/>
-          <label for="remember" id="checkbox" >Remember me</label>
-        </p>
-
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-          <i class="material-icons right"></i>
-        </button>
-
-        <a class="waves-effect waves-light btn" id="signin" routerLink="/cadastro">Signin</a>
-
-
-
+    <div class="form-group">
+      <label for="nameL">Nome :</label>
+      <input  name="name" class="form-control"  (keyup)="onKeUp($event)"  id="nameL" ngModel required #userNameL="ngModel">
+      <p> valor atual: {{ valorAtual }}</p>
     </div>
-  </div>
+
+    <div class="form-group">
+      <label for="passwordL">password :</label>
+      <input type="password" name="passwordL" class="form-control"  id="passwordL" ngModel required #userPasswordL="ngModel">
+    </div>
+
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+
+    <button  (click)="onClick()" type="submit" class="btn btn-default">Submit</button>
+  </form>
 
 </div>
 
-</form>
+<div>
+  <p>Form value: <b> {{ formLogin.value | json }} </b></p>
+  <p>Form valid: <b> {{ formLogin.valid }} </b></p>
+  <p>Form touched: <b> {{ formLogin.touched }} </b></p>
+  <p>Form submitted: <b> {{ formLogin.submitted }} </b></p>
+
+</div>
+
+<div>
+  <p>Form value: <b> {{ formLogin.value | json }} </b></p>
+  <p>estado do user : <b>{{temContaGet()}} </b> </p>
+
+</div>
+

@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {NgForm} from "@angular/forms";
+
+import { NgForm  } from "@angular/forms";
 
 @Component({
   selector: 'app-login',
@@ -9,8 +10,17 @@ import {NgForm} from "@angular/forms";
 })
 export class LoginComponent implements OnInit {
 
-  onSubmit(formLogin: NgForm) {
+  meuNome: String = "bernard";
+  senha: String = '123456'
 
+  valorAtual: String = "";
+
+  //onKeyUp(evento: KeyboardEvent){
+   // this.valorAtual = (<HTMLInputElement>evento.target).value;
+
+  //}
+
+  onSubmit(formLogin: NgForm) {
     console.log(formLogin);
 
   }

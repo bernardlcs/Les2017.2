@@ -11,11 +11,9 @@ export class CadastroUserComponent implements OnInit {
 
 
   onFormSubmCad(userFormCad: NgForm) {
-
     console.log(userFormCad);
 
   }
-
 
   constructor() { }
 
